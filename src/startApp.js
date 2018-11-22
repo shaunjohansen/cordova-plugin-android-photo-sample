@@ -18,5 +18,5 @@ export function start() {
     throw new Error('No element with id="root" found in HTML')
   }
 
-  ReactDOM.render(<App />, reactRoot)
+  ReactDOM.render(<App/>, reactRoot)
 }
