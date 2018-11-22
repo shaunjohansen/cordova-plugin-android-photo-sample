@@ -1,0 +1,8 @@
+﻿Thumbs.db
+*.DS_Store
+
+*.bak
+*.cache
+*.log
+
+/node_modules/**
