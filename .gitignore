@@ -5,4 +5,6 @@
 *.cache
 *.log
 
-/node_modules/**
+/node_modules
+/platforms
+/plugins
