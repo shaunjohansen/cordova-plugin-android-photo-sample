@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-android-photo-sample",
+  "displayName": "Take a Photo",
+  "description": "Sample Cordova application demonstrating how to use the cordova-plugin-android-photo plugin",
+  "version": "1.0.0",
+  "author": "Shaun Johansen",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
