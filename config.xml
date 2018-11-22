@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <hook src="bin/build_web_app.sh" type="before_prepare" />
+    <hook src="bin/build_web_app_for_cordova.sh" type="before_prepare" />
     <platform name="android">
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
