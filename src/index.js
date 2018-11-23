@@ -10,8 +10,9 @@ import isCordova from 'utils/isCordova'
 if (!isCordova()) {
   doStartApp()
 } else {
-  // Cordova fires a deviceready event when Cordova has loaded
+  // manually load the cordova.js library provided by the cordova build process
   importJs('cordova.js')
+  // wait for the deviceready event before proceeding
   window.document.addEventListener('deviceready', function() {
     // our application code can now assume that deviceready has fired, thus simplifying access to plugins
     doStartApp()
