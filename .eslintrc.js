@@ -26,6 +26,7 @@ module.exports = {
     'indent': [ 'error', 2 ],
     'linebreak-style': [ 'error', 'unix' ],
     'quotes': [ 'error', 'single' ],
+    'jsx-quotes': ['error', 'prefer-single'],
     'semi': [ 'error', 'never' ],
     'comma-dangle': [ 'error', 'always-multiline' ],
     'no-multi-spaces': 'warn',
