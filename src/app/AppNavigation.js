@@ -1,3 +1,4 @@
+import { clearSnackbarMessages } from 'components/SnackbarMessages'
 import { Route, Router, Switch } from 'react-router-dom'
 import Acknowledgements from 'pages/Acknowledgements'
 import createBrowserHistory from 'history/createBrowserHistory'
@@ -7,6 +8,10 @@ import isCordova from 'utils/isCordova'
 import React from 'react'
 
 const _history = isCordova() ? createHashHistory() : createBrowserHistory()
+
+_history.listen(() => {
+  clearSnackbarMessages()
+})
 
 export const goToPath = (path, replace) => {
   if (replace) {

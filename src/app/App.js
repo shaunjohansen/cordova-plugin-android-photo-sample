@@ -4,6 +4,7 @@ import AppTheme from 'app/Theme'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import ErrorBoundary from 'components/ErrorBoundary'
 import React from 'react'
+import SnackbarMessages from 'components/SnackbarMessages'
 
 //
 // Initializes Material-UI css and theme, wraps React components in ErrorBoundary.
@@ -14,6 +15,7 @@ const App = () => (
     <MuiThemeProvider theme={AppTheme}>
       <AppNavigation/>
     </MuiThemeProvider>
+    <SnackbarMessages/>
   </ErrorBoundary>
 )
 
