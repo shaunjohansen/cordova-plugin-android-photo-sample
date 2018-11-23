@@ -1,7 +1,7 @@
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import AppNavigation from 'app/AppNavigation'
-import CssBaseline from '@material-ui/core/CssBaseline'
 import AppTheme from 'app/Theme'
+import CssBaseline from '@material-ui/core/CssBaseline'
 import ErrorBoundary from 'components/ErrorBoundary'
 import React from 'react'
 

@@ -20,7 +20,7 @@ if (!isCordova()) {
 
 // loads the second bundle and executes the app startup procedure
 function doStartApp() {
-  return import('startApp').then((startApp) => {
+  return import('app/startApp').then((startApp) => {
     startApp.start()
   })
 }
