@@ -20,12 +20,12 @@ export function start() {
 }
 
 const initCordovaApp = () => {
-  // Implement back button for Android
-  // see https://developer.android.com/training/implementing-navigation/temporal
-  document.addEventListener('backbutton', (e) => {
-    // disable back button for the entire app (not recommended, but this is how to do it):
-    e.preventDefault()
-  }, false)
+  // // Implement back button for Android
+  // // see https://developer.android.com/training/implementing-navigation/temporal
+  // document.addEventListener('backbutton', (e) => {
+  //   // disable back button for the entire app (not recommended, but this is how to do it):
+  //   e.preventDefault()
+  // }, false)
 }
 
 const initWebApp = () => {
