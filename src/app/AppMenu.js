@@ -1,17 +1,13 @@
+import { Path } from 'app/AppNavigation'
 import IconButtonMenu from 'components/IconButtonMenu'
-import MenuItem from '@material-ui/core/MenuItem'
 import MoreVert from '@material-ui/icons/MoreVert'
+import NavigationMenuItem from 'components/NavigationMenuItem'
 import React from 'react'
 
 class AppMenu extends React.Component {
   constructor() {
     super()
     this.menuRef = React.createRef()
-  }
-  handleExample = () => {
-    this.menuRef.current.closeMenu()
-
-    console.log('TODO: implement app menus')
   }
   render() {
     return (
@@ -27,7 +23,8 @@ class AppMenu extends React.Component {
           horizontal: 'right',
         }}
       >
-        <MenuItem onClick={this.handleExample}>Example Menu</MenuItem>
+        <NavigationMenuItem title='Home' path={Path.home()}/>
+        <NavigationMenuItem title='Acknowledgements' path={Path.acknowledgements()}/>
       </IconButtonMenu>
     )
   }

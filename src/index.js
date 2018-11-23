@@ -1,7 +1,5 @@
 import importJs from 'utils/importJs'
-
-// must import react to access process.env.REACT_APP_* configuration vars
-import 'react'
+import isCordova from 'utils/isCordova'
 
 //
 // Note: in a cordova environment it is important that we do as little work as possible in JavaScript before the
@@ -9,9 +7,7 @@ import 'react'
 // cordova's native loading and JavaScript initialization increases app start time.
 //
 
-const IS_CORDOVA = process.env.REACT_APP_IS_CORDOVA
-
-if (IS_CORDOVA !== 'true') {
+if (!isCordova()) {
   doStartApp()
 } else {
   // Cordova fires a deviceready event when Cordova has loaded
