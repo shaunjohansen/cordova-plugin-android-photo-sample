@@ -20,8 +20,8 @@ const PageSkeleton = class extends React.Component {
       <div className={classes.outerRow}>
         <div className={classes.outerCol}>
           {appBar}
+          {showProgress && <LinearProgress color='secondary'/>}
           <div className={classes.content}>
-            {showProgress && <LinearProgress className={classes.progress} color='secondary'/>}
             {children}
           </div>
         </div>
@@ -46,10 +46,6 @@ const styles = (/*theme*/) => ({
     flex: 1,
     position: 'relative',
     overflowY: 'auto',
-  },
-  progress: {
-    position: 'absolute',
-    left: 0, top: 0, right: 0,
   },
 })
 
