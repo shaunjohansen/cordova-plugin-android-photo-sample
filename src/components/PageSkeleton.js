@@ -7,7 +7,6 @@ import React from 'react'
 const PageSkeleton = class extends React.Component {
   static propTypes = {
     appBar: PropTypes.node,
-    classes: PropTypes.object.isRequired,
     children: PropTypes.any,
     showProgress: PropTypes.bool,
   }

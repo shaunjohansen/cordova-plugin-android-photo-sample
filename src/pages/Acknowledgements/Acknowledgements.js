@@ -7,14 +7,10 @@ import ListItemText from '@material-ui/core/ListItemText'
 import MainAppBar from 'app/MainAppBar'
 import Package from '../../../package.json'
 import PageSkeleton from 'components/PageSkeleton'
-import PropTypes from 'prop-types'
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 
 const Acknowledgements = class extends React.Component {
-  static propTypes = {
-    classes: PropTypes.object.isRequired,
-  }
   render() {
     const { classes } = this.props
     return (

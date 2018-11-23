@@ -1,31 +1,29 @@
 // code adapted from https://reacttraining.com/react-router/web/guides/code-splitting
 
+import PropTypes from 'prop-types'
 import React from 'react'
 
 class Bundle extends React.Component {
+  static propTypes = {
+    load: PropTypes.object.isRequired,
+  }
   state = {
     loadedModule: null,
   }
-
-  componentWillMount() {
+  componentDidMount() {
     this.mounted = true
     this.load(this.props)
   }
-
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     if (nextProps.load !== this.props.load) {
       this.load(nextProps)
     }
   }
-
   componentWillUnmount() {
     this.mounted = false
   }
-
   load(props) {
-    this.setState({
-      loadedModule: null,
-    })
+    this.setState({ loadedModule: null })
     props.load.then((loadedModule) => {
       if (this.mounted) {
         this.setState({
@@ -37,7 +35,6 @@ class Bundle extends React.Component {
       console.error('Error loading module', error)
     })
   }
-
   render() {
     if (!this.state.loadedModule) {
       return null

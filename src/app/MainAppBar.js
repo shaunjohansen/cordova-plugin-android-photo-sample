@@ -12,7 +12,6 @@ const APP_LOGO_SIZE = 36
 class MainAppBar extends React.Component {
   static propTypes = {
     title: PropTypes.string,
-    classes: PropTypes.object.isRequired,
   }
   render() {
     const { classes, title } = this.props
