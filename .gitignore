@@ -19,7 +19,11 @@
 .env.test.local
 .env.production.local
 
+# debug and log files
 npm-debug.log*
 *.bak
 *.cache
 *.log
+
+# build output
+/src/pages/*/index.js

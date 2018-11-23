@@ -8,4 +8,4 @@ REACT_APP_IS_CORDOVA=true npm run build
 # copy build output to the `www` folder, where cordova expects it to be
 rm -rf www
 cp -rf build www
-find ./www/static -name \"*.map\" -type f -delete
+rm www/static/js/*.map

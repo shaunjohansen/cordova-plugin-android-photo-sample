@@ -12,13 +12,10 @@ class ErrorBoundary extends React.Component {
   static propTypes = {
     children: PropTypes.any.isRequired,
   }
-  constructor(props) {
-    super(props)
-    this.state = {
-      hasError: false,
-      error: null,
-      info: null,
-    }
+  state = {
+    hasError: false,
+    error: null,
+    info: null,
   }
   componentDidCatch(error, info) {
     // Display fallback UI

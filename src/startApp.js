@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from 'ui/App'
+import App from 'app/App'
 import * as serviceWorker from 'serviceWorker'
 
 const IS_CORDOVA = process.env.REACT_APP_IS_CORDOVA

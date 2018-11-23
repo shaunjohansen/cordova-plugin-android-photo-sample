@@ -6,9 +6,9 @@
   "author": "Shaun Johansen",
   "license": "ISC",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "start": "./bin/make-page-index-files.js && react-scripts start",
+    "build": "./bin/make-page-index-files.js && react-scripts build",
+    "test": "./bin/make-page-index-files.js && react-scripts test"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
