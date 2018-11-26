@@ -6,7 +6,7 @@ import loadImage from 'blueimp-load-image'
 import MainAppBar from 'app/MainAppBar'
 import PageSkeleton from 'components/PageSkeleton'
 import React from 'react'
-import TakePictureButton from './TakePictureButton'
+import TakePictureButton from 'components/TakePictureButton'
 import Typography from '@material-ui/core/Typography'
 
 const Home = class extends React.Component {
