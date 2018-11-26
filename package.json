@@ -8,7 +8,8 @@
   "scripts": {
     "start": "./bin/make-page-index-files.js && react-scripts start",
     "build": "./bin/make-page-index-files.js && react-scripts build",
-    "test": "./bin/make-page-index-files.js && react-scripts test"
+    "test": "./bin/make-page-index-files.js && react-scripts test",
+    "reset-cordova-android": "mkdir -p www && cordova platform remove android && cordova platform add android"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
