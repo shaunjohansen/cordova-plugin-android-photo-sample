@@ -18,5 +18,5 @@ To install dependencies we use the normal `npm install` plus an additional scrip
 Normal operating procedures apply for running the cordova app on android:
 
 ```bash
-  cordova run android
+  ./node_modules/.bin/cordova run android
 ```
