@@ -12,8 +12,8 @@
     "reset-cordova-android": "mkdir -p www && cordova platform remove android && cordova platform add android"
   },
   "dependencies": {
-    "@material-ui/core": "^3.5.1",
-    "@material-ui/icons": "^3.0.1",
+    "@material-ui/core": "^3.9.4",
+    "@material-ui/icons": "^3.0.2",
     "blueimp-load-image": "^2.20.1",
     "cordova": "^8.1.2",
     "cordova-android": "^7.1.3",
